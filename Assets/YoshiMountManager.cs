@@ -22,7 +22,7 @@ void Update()
     if (!hasRider) return;
 
     float h = Input.GetAxisRaw("Horizontal");
-    rb.velocity = new Vector2(h * speed, rb.velocity.y);
+    rb.linearVelocity = new Vector2(h * speed, rb.linearVelocity.y);
 
     // Descer do Yoshi
     if (Input.GetKeyDown(KeyCode.LeftShift))
